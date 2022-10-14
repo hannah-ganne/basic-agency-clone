@@ -10,20 +10,27 @@ export const HeaderContainer = styled.header`
     top: 0;
     left: 0;
     z-index: 5;
-    ${({ scrollDown }) => scrollDown ? `
-            transform: translateY(-100%);
-            transition: all 0.3s ease-in;
-    ` : `
-    background-color: var(--white);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    transition: all 0.3s ease-in;
+    ${({scrollDown}) => scrollDown && `
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in;
     `}
-    ${({ scrollDone }) => scrollDone && `
-    background-color: transparent;
+    ${({ scrollUp }) => scrollUp && `
+        background-color: var(--white);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transition: all 0.3s ease-in;
+        & a {
+            color: var(--black);
+        }
+    `}
+    ${({scrollDone}) => scrollDone && `
+        background-color: transparent;
+        & a {
+            color: var(--white);
+        }
     `}
 `
 
