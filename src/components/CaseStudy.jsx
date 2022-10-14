@@ -1,5 +1,5 @@
 import { Section, Row } from '../styles/GlobalStyle'
-import { Link, MediaContainer, CaseImage, CaseVideo, CaseTitle, CaseDetail } from '../styles/CaseStudy'
+import { Link, MediaContainer, CaseImage, CaseTitle, CaseDetail } from '../styles/CaseStudy'
 import patagonia from '../assets/images/Patagonia-Case-Study-Thumbnail.jpeg'
 import wilson from '../assets/images/WIlson-Case-Study-Thumbnail.jpeg'
 import google from '../assets/videos/Google-Store-Web-Design-Case-Study-Thumbnail-02.mp4'
