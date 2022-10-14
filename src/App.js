@@ -5,6 +5,7 @@ import Header from './components/Header'
 import VideoSection from './components/VideoSection';
 import Hero from './components/Hero';
 import CaseStudy from './components/CaseStudy'
+import Clients from './components/Clients'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <VideoSection />
       <Hero />
       <CaseStudy />
+      <Clients />
     </>
   )
 }
