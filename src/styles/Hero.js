@@ -7,7 +7,14 @@ export const HeroContainer = styled(Section)`
 `
 
 export const HeroText = styled.h1`
+    margin: 0;
     font-size: 2.3rem;
+    font-weight: 500;
+`
+
+export const HeroLogo = styled.img`
+    width: 30rem;
+    align-self: flex-end;
 `
 
 
