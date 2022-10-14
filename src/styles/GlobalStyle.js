@@ -60,6 +60,7 @@ export const Row = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-top: ${({ marginTop }) => marginTop}
 `
 
 export const Column = styled.div`
