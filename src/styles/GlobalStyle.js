@@ -2,7 +2,7 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 import noiseBackground from '../assets/images/300-30-10-monochrome.png'
 
 const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
     :root {
         --black: #252422;
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         position: relative;
         overflow: scroll;
         background-color: var(--white);
