@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Link = styled.a`
     width: 32%;
     color: var(--black);
+
+    &:hover h5 {
+        text-decoration: underline;
+    }
 `
 
 export const MediaContainer = styled.div`
