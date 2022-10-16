@@ -36,10 +36,10 @@ export default function ClientsSlider() {
         }
     }
 
-    const wheelEvent = (e) => {
-        e.preventDefault()
-        slider.current.scrollLeft += e.deltaY
-    }
+    // const wheelEvent = (e) => {
+    //     e.preventDefault()
+    //     slider.current.scrollLeft += e.deltaY
+    // }
 
     useEffect(() => {
         const sliderInnerEl = sliderInner.current
@@ -49,7 +49,7 @@ export default function ClientsSlider() {
         sliderInnerEl.addEventListener('mouseup', mouseUpEvent)
         sliderInnerEl.addEventListener('mouseleave', mouseLeaveEvent)
         sliderInnerEl.addEventListener('mousemove', mouseMoveEvent)
-        sliderInnerEl.addEventListener('wheel', wheelEvent)
+        // sliderInnerEl.addEventListener('wheel', wheelEvent)
 
         return (() => {
             sliderEl.addEventListener('scroll', scrollEvent)
@@ -57,7 +57,7 @@ export default function ClientsSlider() {
             sliderInnerEl.addEventListener('mouseup', mouseUpEvent)
             sliderInnerEl.addEventListener('mouseleave', mouseLeaveEvent)
             sliderInnerEl.addEventListener('mousemove', mouseMoveEvent)
-            sliderInnerEl.addEventListener('wheel', wheelEvent)
+            // sliderInnerEl.addEventListener('wheel', wheelEvent)
         })
     }, [])
 
@@ -66,8 +66,10 @@ export default function ClientsSlider() {
     
         const [cursorVisible, setCursorVisible] = useState(true)
         const [cursorSmaller, setCursorSmaller] = useState(false)
-        const [endX, setEndX] = useState(null)
-        const [endY, setEndY] = useState(null)
+        const [endX, setEndX] = useState(window.innerWidth / 2)
+        const [endY, setEndY] = useState(window.innerHeight / 2)
+        // const [endX, setEndX] = useState(window.innerWidth / 2)
+        // const [endY, setEndY] = useState(window.innerHeight / 2)
     
         const mouseDownEvent = () => {
             setCursorSmaller(true)
@@ -86,6 +88,7 @@ export default function ClientsSlider() {
         }
     
         const mouseMoveEvent = (e) => {
+            e.preventDefault()
             setCursorVisible(true)
 
             setEndX(e.pageX)
@@ -107,7 +110,7 @@ export default function ClientsSlider() {
                 containerEl.addEventListener('mouseenter', mouseEnterEvent)
                 containerEl.addEventListener('mouseleave', mouseLeaveEvent)
             }
-        }, [])
+        }, [container])
 
         return (
             <>
