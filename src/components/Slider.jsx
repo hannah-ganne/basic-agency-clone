@@ -66,8 +66,8 @@ export default function ClientsSlider() {
     
         const [cursorVisible, setCursorVisible] = useState(true)
         const [cursorSmaller, setCursorSmaller] = useState(false)
-        const [endX, setEndX] = useState(window.innerWidth / 2)
-        const [endY, setEndY] = useState(window.innerHeight / 2)
+        const [endX, setEndX] = useState(-100)
+        const [endY, setEndY] = useState(-100)
         // const [endX, setEndX] = useState(window.innerWidth / 2)
         // const [endY, setEndY] = useState(window.innerHeight / 2)
     
@@ -118,8 +118,8 @@ export default function ClientsSlider() {
                     ref={dot}
                     top={`${endY}px`}
                     left={`${endX}px`}
-                    opacity={cursorVisible}
-                    transform={cursorSmaller}
+                    visible={cursorVisible}
+                    smaller={cursorSmaller}
                 >
                     {cursorSmaller ? '' : 'Drag'}
                 </SliderCursor>
