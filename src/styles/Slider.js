@@ -89,8 +89,8 @@ export const SliderCursor = styled(CursorDot)`
     position: absolute;
     top: ${props => props.top};
     left: ${props => props.left};
-    transform: ${props => props.transform ? 'translate(-50%, -50%) scale(0.75)' : 'translate(-50%, -50%) scale(1)'};
-    opacity: ${props => props.opacity ? 1 : 0};
+    transform: ${props => props.smaller ? 'translate(-50%, -50%) scale(0.75)' : 'translate(-50%, -50%) scale(1)'};
+    opacity: ${props => props.visible ? 1 : 0};
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 
     &::before{
