@@ -6,6 +6,9 @@ import VideoSection from './components/VideoSection';
 import Hero from './components/Hero';
 import CaseStudy from './components/CaseStudy'
 import Clients from './components/Clients'
+import Spotlight from './components/Spotlight'
+import News from './components/News'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <Hero />
       <CaseStudy />
       <Clients />
+      <Spotlight />
+      <News />
+      <Footer />
     </>
   )
 }
