@@ -13,8 +13,8 @@ export default function VideoSection() {
     
         const cursorVisible = useRef(true)
         const cursorEnlarged = useRef(false)
-        const endX = useRef(null)
-        const endY = useRef(null)
+        const endX = useRef(window.innerWidth / 2)
+        const endY = useRef(window.innerHeight / 2)
     
         const toggleCursorVisibility = () => {
             if (cursorVisible.current) {
