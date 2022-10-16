@@ -13,14 +13,18 @@ export default function VideoSection() {
     
         const cursorVisible = useRef(true)
         const cursorEnlarged = useRef(false)
-        const endX = useRef(window.innerWidth / 2)
-        const endY = useRef(window.innerHeight / 2)
+        const endX = useRef(null)
+        const endY = useRef(null)
     
         const toggleCursorVisibility = () => {
             if (cursorVisible.current) {
                 dot.current.style.opacity = 1
+                dotLogo.current.style.opacity = 1
+                dotYear.current.style.opacity = 1
             } else {
                 dot.current.style.opacity = 0
+                dotLogo.current.style.opacity = 0
+                dotYear.current.style.opacity = 0
             }
         }
     
