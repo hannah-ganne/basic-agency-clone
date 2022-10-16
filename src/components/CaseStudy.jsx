@@ -32,7 +32,7 @@ export default function CaseStudy() {
                 </Link>
                 <Link href="#">
                     <MediaContainer>
-                        <CaseImage as="video" src={google} autoPlay={true} loop={true} playsInline={true} />
+                        <CaseImage as="video" src={google} muted={true} autoPlay={true} playsInline={true} loop={true} />
                     </MediaContainer>
                     <CaseTitle>
                         Google Store
