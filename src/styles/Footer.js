@@ -85,7 +85,7 @@ export const FooterColumn = styled.div`
 export const FooterBottom = styled.div`
     display: flex;
     justify-content: space-between;
-    background-color: var(--black);
+    background-color: #191918;
     padding: 1.2rem 5rem;
     font-size: 0.7rem;
     color: #5E5E5E;
