@@ -12,6 +12,8 @@ const slideUp = keyframes`
 
     100% {
         opacity: 0;
+        visibility: hidden;
+        z-index: -100;
     }
 `
 
@@ -35,7 +37,7 @@ export const LoaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
+    z-index: 10;
     animation-name: ${slideUp};
     animation-duration: 0.5s;
     animation-delay: 1s;
