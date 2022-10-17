@@ -36,11 +36,6 @@ export default function ClientsSlider() {
         }
     }
 
-    // const wheelEvent = (e) => {
-    //     e.preventDefault()
-    //     slider.current.scrollLeft += e.deltaY
-    // }
-
     useEffect(() => {
         const sliderInnerEl = sliderInner.current
         const sliderEl = slider.current
@@ -49,7 +44,6 @@ export default function ClientsSlider() {
         sliderInnerEl.addEventListener('mouseup', mouseUpEvent)
         sliderInnerEl.addEventListener('mouseleave', mouseLeaveEvent)
         sliderInnerEl.addEventListener('mousemove', mouseMoveEvent)
-        // sliderInnerEl.addEventListener('wheel', wheelEvent)
 
         return (() => {
             sliderEl.addEventListener('scroll', scrollEvent)
@@ -57,7 +51,6 @@ export default function ClientsSlider() {
             sliderInnerEl.addEventListener('mouseup', mouseUpEvent)
             sliderInnerEl.addEventListener('mouseleave', mouseLeaveEvent)
             sliderInnerEl.addEventListener('mousemove', mouseMoveEvent)
-            // sliderInnerEl.addEventListener('wheel', wheelEvent)
         })
     }, [])
 
@@ -68,8 +61,6 @@ export default function ClientsSlider() {
         const [cursorSmaller, setCursorSmaller] = useState(false)
         const [endX, setEndX] = useState(-100)
         const [endY, setEndY] = useState(-100)
-        // const [endX, setEndX] = useState(window.innerWidth / 2)
-        // const [endY, setEndY] = useState(window.innerHeight / 2)
     
         const mouseDownEvent = () => {
             setCursorSmaller(true)
