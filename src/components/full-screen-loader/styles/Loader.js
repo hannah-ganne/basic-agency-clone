@@ -5,15 +5,16 @@ const slideUp = keyframes`
         transform: translateY(0);
     }
 
-    99% {
+    90% {
         transform: translateY(-100%);
         opacity: 1;
     }
 
     100% {
         opacity: 0;
+        display: none;
         visibility: hidden;
-        z-index: -100;
+        /* z-index: -100; */
     }
 `
 
@@ -37,11 +38,11 @@ export const LoaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 16;
     animation-name: ${slideUp};
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
     animation-delay: 1s;
-    animation-timing-function: cubic-bezier(1,.2,.74,1.02);
+    animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: both;
 `
