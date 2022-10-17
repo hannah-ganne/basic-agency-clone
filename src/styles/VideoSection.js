@@ -16,14 +16,15 @@ const common = `
     z-index: 100;
     pointer-events: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 `
 
-export const CursorDot = styled.div`
+export const CursorDot = styled.div.attrs(props => ({
+    style: {
+        top: props.top,
+        left: props.left,
+    },
+}))`
     width: 7rem;
     height: 7rem;
     background-color: var(--white);
@@ -36,16 +37,30 @@ export const CursorDot = styled.div`
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    transform: scale(${props => props.smaller});
+    opacity: ${props => props.visible};
     ${common}
 `
 
-export const CursorLogo = styled.img`
+export const CursorLogo = styled.img.attrs(props => ({
+    style: {
+        top: props.top,
+        left: props.left,
+    },
+}))`
     width: 7rem;
+    opacity: ${props => props.visible};
     ${common}
 
 `
 
-export const CursorYear = styled.span`
+export const CursorYear = styled.span.attrs(props => ({
+    style: {
+        top: props.top,
+        left: props.left,
+    },
+}))`
     font-weight: 700;
+    opacity: ${props => props.visible};
     ${common}
 `
