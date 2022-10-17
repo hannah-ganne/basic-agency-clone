@@ -37,6 +37,7 @@ export const SliderItem = styled.div`
     height: 98%;
     top: 1%;
     margin-right: 10rem;
+    color: ${ props => props.theme.text }
 `
 
 export const ClientLogo = styled.img`
@@ -79,19 +80,21 @@ export const ProgressBarInner = styled.div`
     left: ${props => props.percentage};
     width: 200px;
     height: 2px;
-    background-color: ${props => props.theme.primary};
+    background-color: ${props => props.theme.text};
 `
 
-export const SliderCursor = styled(CursorDot)`
+export const SliderCursor = styled(CursorDot).attrs(props => ({
+    style: {
+        top: props.top,
+        left: props.left,
+    },
+}))`
     background-color: var(--pink);
     z-index: 100;
     pointer-events: none;
     position: absolute;
-    top: ${props => props.top};
-    left: ${props => props.left};
-    transform: ${props => props.smaller ? 'translate(-50%, -50%) scale(0.75)' : 'translate(-50%, -50%) scale(1)'};
-    opacity: ${props => props.visible ? 1 : 0};
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(${props => props.smaller ? 0.75 : 1});
 
     &::before{
         content:'';
@@ -100,7 +103,7 @@ export const SliderCursor = styled(CursorDot)`
         border-bottom: 10px solid transparent;
         border-left: 10px solid transparent;
         margin-right: 5rem;
-        opacity: ${props => props.transform ? 1 : 0};
+        opacity: ${props => props.smaller ? 1 : 0};
     } 
 
     &::after{
@@ -110,7 +113,7 @@ export const SliderCursor = styled(CursorDot)`
         border-bottom: 10px solid transparent;
         border-left: 10px solid var(--pink);
         margin-left: 5rem;
-        opacity: ${props => props.transform ? 1 : 0};
+        opacity: ${props => props.smaller ? 1 : 0};
     }
 
 

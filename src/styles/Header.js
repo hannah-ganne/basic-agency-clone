@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+    background-color: ${props => props.theme.background};
     width: 100%;
     display: flex;
     align-items: center;
@@ -10,21 +11,20 @@ export const HeaderContainer = styled.header`
     top: 0;
     left: 0;
     z-index: 1;
+    & a {
+        color: ${props => props.theme.text};
+    }
     ${({scrollDown}) => scrollDown && `
         transform: translateY(-100%);
-        transition: all 0.3s ease-in;
+        transition: all 0.5s ease;
     `}
     ${({ scrollUp }) => scrollUp && `
-        background-color: var(--white);
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         z-index: 5;
-        transition: all 0.3s ease-in;
-        & a {
-            color: var(--black);
-        }
+        transition: all 0.5s ease;
     `}
     ${({scrollDone}) => scrollDone && `
         background-color: transparent;

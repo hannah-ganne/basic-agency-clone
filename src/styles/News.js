@@ -1,10 +1,12 @@
-import { convertLength } from "@mui/material/styles/cssUtils";
 import styled from "styled-components";
-import { Section, Row, Column } from './GlobalStyle'
+import { Section, Row, Column, Button } from './GlobalStyle'
 
 export const NewsSection = styled(Section)`
+    background-color: ${props => props.theme.background};
+    color: ${props => props.theme.text};
     padding-top: 8rem;
     height: fit-content;
+    transition: all 0.5s ease;
 `
 
 export const SectionTitle = styled(Row)`
@@ -17,6 +19,19 @@ export const SectionTitle = styled(Row)`
 
     & button {
         margin-top: 0;
+    }
+`
+
+export const NewsButton = styled(Button)`
+    color: ${props => props.theme.text};
+    border: 1px solid ${props => props.theme.text};
+    background: linear-gradient(to top, ${props => props.theme.text} 50%, ${props => props.theme.background} 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: all .3s ease-out;
+    &:hover {
+        border-color: ${props => props.theme.text};
+        color: ${props => props.theme.background};
     }
 `
 
