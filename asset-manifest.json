@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/basic-agency-clone/static/js/main.25b231e2.js",
+    "main.js": "/basic-agency-clone/static/js/main.9389ae61.js",
     "static/media/reel-loop.mp4": "/basic-agency-clone/static/media/reel-loop.c9ff74764c17894c30aa.mp4",
     "static/media/Culture-Loop_v1.mp4": "/basic-agency-clone/static/media/Culture-Loop_v1.973975dc8ad54eae8c18.mp4",
     "static/media/image-10.png": "/basic-agency-clone/static/media/image-10.4e36c6e0937a794db1e1.png",
@@ -18,15 +18,16 @@
     "static/media/Wilson-Logo.svg": "/basic-agency-clone/static/media/Wilson-Logo.23d0982a684149ec8b6df51daf3bd7b4.svg",
     "static/media/KFC-Logo.svg": "/basic-agency-clone/static/media/KFC-Logo.7edf1024476fa1f7cd3c7600b5da1ce2.svg",
     "static/media/logo.svg": "/basic-agency-clone/static/media/logo.aab7dcdc27d0726c44efff1ea296422d.svg",
+    "static/media/logo-pink.svg": "/basic-agency-clone/static/media/logo-pink.68913e85bee08f36b74a905899f582e3.svg",
     "static/media/ATT-Logo.svg": "/basic-agency-clone/static/media/ATT-Logo.5ee4fcfeadc91ecb92de203a41d086fa.svg",
     "static/media/logo-white.svg": "/basic-agency-clone/static/media/logo-white.7b0854537e24ac38e8acabf7a7b3e764.svg",
     "static/media/google-dark.svg": "/basic-agency-clone/static/media/google-dark.f1000d9488d36194db80aaa932d82bea.svg",
     "static/media/logo-simple-white.svg": "/basic-agency-clone/static/media/logo-simple-white.23841f70243536848f4d317f73aeedaf.svg",
     "static/media/logo-simple.svg": "/basic-agency-clone/static/media/logo-simple.ebc9d318ab2729e9fce1d554f0143ba4.svg",
     "index.html": "/basic-agency-clone/index.html",
-    "main.25b231e2.js.map": "/basic-agency-clone/static/js/main.25b231e2.js.map"
+    "main.9389ae61.js.map": "/basic-agency-clone/static/js/main.9389ae61.js.map"
   },
   "entrypoints": [
-    "static/js/main.25b231e2.js"
+    "static/js/main.9389ae61.js"
   ]
 }
