@@ -28,6 +28,9 @@ From the analysis to the deployment of the project, it took me approximately 25 
 - dark theme, debugging, deployment: 5h
 
 ### Screenshot
+<img width="1434" alt="Screenshot 2022-10-17 at 23 40 16" src="https://user-images.githubusercontent.com/48105337/196289198-01f126bd-5aa9-4952-83c1-9c6aa1124b56.png">
+<img width="1434" alt="Screenshot 2022-10-17 at 23 40 36" src="https://user-images.githubusercontent.com/48105337/196289212-03d6175b-2ad5-4719-afaf-0023b1dde755.png">
+<img width="1434" alt="Screenshot 2022-10-17 at 23 40 48" src="https://user-images.githubusercontent.com/48105337/196289221-bde266e7-657e-4f47-8bd6-9d136b1c0394.png">
 
 
 ### Links
