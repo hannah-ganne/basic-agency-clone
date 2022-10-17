@@ -66,7 +66,7 @@ export default function footer() {
         </FooterContainer>
         <FooterBottom>
                 <FooterColumn>BASIC/DEPT®, INC 10 - 22©</FooterColumn>
-                <FooterColumn>EASY TO UNDERSTAND, IMPOSSIBLE TO IGNORE.™</FooterColumn>
+                <FooterColumn>CLONE PROJECT BY <a href="https://github.com/hannah-ganne">HANNAH GANNE</a></FooterColumn>
                 <FooterColumn>
                     <FooterLink>
                         TERMS, PRIVACY POLICY
