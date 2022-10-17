@@ -2,7 +2,6 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 import noiseBackground from '../assets/images/300-30-10-monochrome.png'
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
     :root {
         --black: #252422;
