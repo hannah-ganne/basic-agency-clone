@@ -1,5 +1,4 @@
-import { NewsSection, SectionTitle, NewsWrapper, NewsDetail, NewsImage, NewsText, NewsTitle, NewsData } from '../styles/News'
-import { Button } from '../styles/GlobalStyle'
+import { NewsSection, SectionTitle, NewsButton } from '../styles/News'
 import NewsItem from './NewsItem';
 import bdJams from '../assets/images/Jams-thumbnail-1.jpeg'
 import ceo from '../assets/images/Ashley-Blog-Thumbnail.jpeg'
@@ -14,7 +13,7 @@ export default function News() {
         <NewsSection>
             <SectionTitle>
                 <h2>Featured News</h2>
-                <Button>View All</Button>
+                <NewsButton>View All</NewsButton>
             </SectionTitle>
             <NewsItem 
                 imgSrc={bdJams}
@@ -58,7 +57,6 @@ export default function News() {
                 category="Work"
                 date=" 04.14.22" 
             />
-
         </NewsSection>
     )
 }
