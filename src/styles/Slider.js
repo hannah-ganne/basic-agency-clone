@@ -93,6 +93,7 @@ export const SliderCursor = styled(CursorDot).attrs(props => ({
     z-index: 100;
     pointer-events: none;
     position: absolute;
+    opacity: ${props => props.visible ? 1 : 0};
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     transform: scale(${props => props.smaller ? 0.75 : 1});
 
