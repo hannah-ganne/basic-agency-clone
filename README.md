@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Frontend Pratice - Instrument Home Page Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a clone project of the home page of [Basic Agency](https://www.basicagency.com/) suggested by [Frontend Practice](https://www.frontendpractice.com/projects/basic). Frontend Practice is a collection of real and carefully chosen websites for developers to recreate as a way to improve and test their skills. [Frontend Practice FAQ](https://www.frontendpractice.com/faq)
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Through this challenge, I practiced:
+- creating a custom cursor on hover, adding animation depending on the mouseevent
+- creating a draggable slider from scratch without using libraries
+- last but not least, building a react project with styled components!
 
-### `npm test`
+From the analysis to the deployment of the project, it took me approximately 25 hours, over the period of 8 days (around 3 hours of work per day)
+- analysis, creating key components such as slider, custom cursor, loader, etc : 8h
+- header, main (sections), footer: 12h
+- dark theme, debugging, deployment: 5h
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Live Site URL: [Click here to see the cloned version of Basic Agency home page live](https://hannah-ganne.github.io/basic-agency-clone/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React](https://reactjs.org/) - JS library
+- [styled components](https://styled-components.com/)
+- Flexbox
+- CSS Grid
+- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer)
+- [Material Icons](https://mui.com/material-ui/material-icons/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Continued development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- I can improve this project by adding locomotive scroll.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Useful resources
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Frontend Practice](https://www.frontendpractice.com/projects) - For more projects like this one. Definitely worth exploring!
+- [Complete Guide On How To Use Styled-components In React](https://dev.to/elijahtrillionz/complete-guide-on-how-to-use-styled-components-in-react-360c) - It is a very concise, well-written introductory article on how to kickstart your journey in styled components. I read this article first before I jumped into the official styled components document and it helped me greatly with the understanding of concepts of styled components.
+- [How to Create a Custom Cursor in React](https://javascript.plainenglish.io/how-to-create-a-custom-cursor-in-react-272314682285) - This is the article which gave me the idea of how to implement a custom cursor. Instead of using useRef hooks for cursor element, I opted for using useState hook.
+- [JavaScript: Create a Device Friendly Product Slider With Progress Bar](https://www.youtube.com/watch?v=LPBGK1gqXoU) - It is the Youtube tutoril video that inspired me on the structure of my slider component. 
