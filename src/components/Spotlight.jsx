@@ -1,23 +1,12 @@
 import { SpotlightSection, Quote, Span, SpotlightButton, Video } from '../styles/Spotlight'
 import { Column, Row } from '../styles/GlobalStyle'
 import culture from '../assets/videos/Culture-Loop_v1.mp4'
-import { useInView } from 'react-intersection-observer'
-import { ThemeProvider } from 'styled-components'
+// import { useInView } from 'react-intersection-observer'
+import { forwardRef } from 'react'
 
-export default function Spotlight() {
-    const { ref: spotlightRef, inView: isVisible } = useInView({
-        threshold: 0.6
-    })
-
-    const theme = {
-        primary: isVisible ? '#f9cdcd' : '#252422',
-        secondary: isVisible ? '#252422' : '#f4f4f4',
-    }
-
-
+const Spotlight = forwardRef((props, ref) => {
     return (
-        <ThemeProvider theme={theme}>
-            <SpotlightSection ref={spotlightRef}>
+            <SpotlightSection ref={ref}>
                 <Row>
                     <Column>
                         <Quote>
@@ -29,6 +18,7 @@ export default function Spotlight() {
                     <Video src={culture} playsInline={true} muted={true} autoPlay={true} loop={true} />
                 </Row>
             </SpotlightSection>
-        </ThemeProvider>
     )
-}
+})
+
+export default Spotlight
